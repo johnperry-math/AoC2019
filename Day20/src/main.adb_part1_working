@@ -1,0 +1,534 @@
+-- Advent of Code 2019, Day 20
+--
+-- John Perry
+--
+-- part 1: find the shortest path through a maze where you have to traverse
+-- portals
+--
+
+pragma Ada_2020;
+
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+
+with Ada.Containers.Vectors;
+with Ada.Containers.Ordered_Sets;
+with Ada.Containers.Ordered_Maps;
+with Ada.Containers.Synchronized_Queue_Interfaces;
+with Ada.Containers.Unbounded_Priority_Queues;
+
+with Ada.Characters.Handling;
+
+procedure Main is
+
+   -- SECTION
+   -- input-related
+
+   F : File_Type; -- input file
+
+   Testing : constant Boolean := False;
+   Which_Test : constant := 2;
+
+   Filename : constant String
+      := (
+          if Testing then (
+             if Which_Test = 1
+             then "/Users/user/common/Ada/AoC2019/Day20/example.txt"
+             elsif Which_Test = 2
+             then "/Users/user/common/Ada/AoC2019/Day20/example2.txt"
+             else "/Users/user/common/Ada/AoC2019/Day20/example.txt"
+            )
+          else "/Users/user/common/Ada/AoC2019/Day20/input.txt"
+         );
+
+   -- SECTION
+   -- debugging
+
+   Verbose : Boolean := False;
+
+   -- SECTION
+   -- data types and subprograms for the maze
+
+   subtype Portal_Letters is Character range 'A' .. 'Z';
+
+   type Portal_Name is array ( 1 .. 2 ) of Character;
+
+   function "=" ( First, Second : Portal_Name ) return Boolean
+   is ( First (1) = Second (1) and then First (2) = Second (2) );
+
+   function "<" (First, Second : Portal_Name) return Boolean
+   is (
+            First (1) < Second (1) or else
+               ( First (1) = Second (1) and then First (2) < Second (2) )
+           );
+
+   package Portal_Sets is new Ada.Containers.Ordered_Sets
+      (
+       Element_Type => Portal_Name
+      );
+
+   All_Portals: Portal_Sets.Set;
+
+   type Feature_Type is ( Space, Wall, Portal, Empty );
+
+   Num_Rows : constant
+      := (
+          if Testing then
+             (
+              case Which_Test is
+                 when 1 => 15,
+                 when 2 => 33,
+                 when others => 123
+             )
+          else 123
+         );
+   Num_Columns : constant
+      := (
+          if not Testing then 131
+          else
+             (
+              case Which_Test is
+                 when 1 => 17,
+                 when 2 => 31,
+                 when others => 131
+             )
+         );
+   subtype Row_Range is Positive range 1 .. Num_Rows;
+   subtype Col_Range is Positive range 1 .. Num_Columns;
+
+   type Maze_Type is array ( Row_Range, Col_Range ) of Feature_Type;
+   Maze : Maze_Type := ( others => ( others => Space ) );
+
+   type Position_Type is record
+      Row : Row_Range;
+      Col : Col_Range;
+   end record;
+
+   function "=" (First, Second : Position_Type) return Boolean is
+      ( First.Row = Second.Row and then First.Col = Second.Col );
+
+   function "<" (First, Second : Position_Type) return Boolean is
+      (
+            First.Row < Second.Row or else
+               ( First.Row = Second.Row and then First.Col < Second.Col )
+           );
+
+   type Directions is ( Up, Down, Left, Right );
+
+   subtype Delta_Range is Integer range -1 .. 1;
+
+   type Position_Delta is record Row, Col : Delta_Range; end record;
+
+   Position_Deltas : array ( Directions ) of Position_Delta
+      := (
+          Up    => ( -1,  0 ),
+          Down  => (  1,  0 ),
+          Left  => (  0, -1 ),
+          Right => (  0,  1 )
+         );
+
+   function Adjacent_Position (Position : Position_Type; Which : Directions)
+                                  return Position_Type
+   is (  (
+               Position.Row + Position_Deltas (Which).Row,
+               Position.Col + Position_Deltas (Which).Col
+              ) );
+
+   package Locations_Of_Portals_Maps is new Ada.Containers.Ordered_Maps
+      (
+       Key_Type     => Position_Type,
+       Element_Type => Portal_Name
+      );
+
+   Locations_Of_Portals: Locations_Of_Portals_Maps.Map;
+
+   package Reachable_Portal_Maps is new Ada.Containers.Ordered_Maps
+      (
+       Key_Type     => Portal_Name,
+       Element_Type => Positive
+      );
+
+   package Portals_Maps is new Ada.Containers.Ordered_Maps
+      (
+       Key_Type     => Portal_Name,
+       Element_Type => Reachable_Portal_Maps.Map,
+       "<"          => "<",
+       "="          => Reachable_Portal_Maps."="
+      );
+
+   Portal_Connections : Portals_Maps.Map;
+
+   procedure Read_Maze is
+
+      Prev_Line : String := Get_Line (F);
+      New_Portal: Portal_Name;
+
+   begin
+
+      -- read first two lines for portals
+      declare
+         Line2: String := Get_Line(F);
+      begin
+         for Col in Prev_Line'Range loop
+            if Prev_Line (Col) /= ' ' then
+               Maze ( 1, Col - 2 ) := Portal;
+               New_Portal := ( Prev_Line (Col), Line2 (Col) );
+               Locations_Of_Portals.Insert ( ( 1, Col - 2 ), New_Portal );
+               All_Portals.Insert ( New_Portal );
+            end if;
+         end loop;
+         Prev_Line := Line2;
+      end;
+
+      -- read until end of maze
+      for Row in Row_Range loop
+         declare
+            Line    : String := Get_Line (F);
+            Col     : Natural := Col_Range'First;
+            In_Maze : Boolean := False;
+            J0      : Integer :=  Line'First;
+         begin
+            if Line (J0) /= ' ' then
+               Maze (Row, 1) := Portal;
+               New_Portal := ( Line (J0), Line (J0 + 1) );
+               if not All_Portals.Contains (New_Portal) then
+                  All_Portals.Insert ( New_Portal );
+               end if;
+               Locations_Of_Portals.Insert ( ( Row, 1 ), New_Portal );
+               Col := Col + 1;
+            end if;
+            In_Maze := True;
+            while Col <= Col_Range'Last loop
+               case Line (J0 + Col + 1) is
+                  when '#' =>
+                     Maze (Row, Col) := Wall;
+                     In_Maze := True;
+                  when '.' => null;
+                  when ' ' =>
+                     Maze (Row, Col) := Empty;
+                     In_Maze := False;
+                  when others => -- portal
+                     if In_Maze then -- portal leading left
+                        Maze (Row, Col - 1) := Portal;
+                        Maze ( Row, Col ) := Empty;
+                        Maze ( Row, Col + 1) := Empty;
+                        New_Portal
+                           := ( Line (J0 + Col + 1), Line (J0 + Col + 2) );
+                        if not All_Portals.Contains (New_Portal) then
+                           All_Portals.Insert ( New_Portal );
+                        end if;
+                        Locations_Of_Portals.Insert
+                           ( (Row, Col - 1), New_Portal );
+                        Col := Col + 1;
+                        In_Maze := False;
+                     elsif Prev_Line (J0 + Col + 1) in Portal_Letters then
+                        if Maze(Row - 2, Col) = Space then
+                           -- portal leading up
+                           Maze (Row, Col) := Empty;
+                           Maze (Row - 1, Col) := Empty;
+                           Maze (Row - 2, Col) := Portal;
+                           New_Portal
+                              := ( Prev_Line (J0 + Col + 1), Line (J0 + Col + 1) );
+                           if not All_Portals.Contains (New_Portal) then
+                              All_Portals.Insert ( New_Portal );
+                           end if;
+                           Locations_Of_Portals.Insert
+                              ( ( Row - 2, Col ), New_Portal );
+                        else
+                           -- portal leading down
+                           Maze (Row - 1, Col) := Empty;
+                           Maze (Row, Col) := Empty;
+                           Maze (Row + 1, Col) := Portal;
+                           New_Portal
+                              := ( Prev_Line (J0 + Col + 1), Line (J0 + Col + 1) );
+                           if not All_Portals.Contains (New_Portal) then
+                              All_Portals.Insert (New_Portal);
+                           end if;
+                           Locations_Of_Portals.Insert
+                              ( ( Row + 1, Col ), New_Portal );
+                        end if;
+                     elsif Maze (Row - 1, Col) = Empty and then
+                        Prev_Line (J0 + Col + 1) in Portal_Letters
+                     -- portal leading down
+                     then
+                        Maze (Row - 1, Col) := Empty;
+                        Maze (Row, Col) := Empty;
+                        Maze (Row + 1, Col) := Portal;
+                        New_Portal
+                           := ( Prev_Line(J0 + Col + 1), Line(J0 + Col + 1) );
+                        if not All_Portals.Contains (New_Portal) then
+                           All_Portals.Insert ( New_Portal );
+                        end if;
+                        Locations_Of_Portals.Insert
+                           ( ( Row + 1, Col), New_Portal );
+                     elsif Line (J0 + Col + 2) in Portal_Letters then
+                        -- portal leading right
+                        Maze (Row, Col) := Empty;
+                        Maze (Row, Col + 1) := Empty;
+                        Maze (Row, Col + 2) := Portal;
+                        New_Portal
+                           := ( Line (J0 + Col + 1), Line (J0 + Col + 2) );
+                        if not All_Portals.Contains (New_Portal) then
+                           All_Portals.Insert ( New_Portal );
+                        end if;
+                        Locations_Of_Portals.Insert
+                           ( (Row, Col + 2), New_Portal );
+                        Col := Col + 3;
+                        In_Maze := True;
+                     else
+                        -- beginning of portal leading down
+                        Maze (Row, Col) := Empty;
+                        -- do not add portal now; will do so on next line
+                     end if;
+               end case;
+               Col := Col + 1;
+            end loop;
+            if Line (J0 + Col + 1) /= ' ' then
+               Maze (Row, Col - 1) := Portal;
+               New_Portal := ( Line (J0 + Col + 1), Line (J0 + Col + 2) );
+               if not All_Portals.Contains (New_Portal) then
+                  All_Portals.Insert ( New_Portal );
+               end if;
+               Locations_Of_Portals.Insert ( (Row, Col - 1), New_Portal );
+            end if;
+            Prev_Line := Line;
+         end;
+      end loop;
+
+      -- read last two lines for portals
+      declare
+         Line1 : String := Get_Line (F);
+         Line2 : String := Get_Line (F);
+      begin
+         for Col in Line1'Range loop
+            if Line1 (Col) /= ' ' then
+               Maze ( Row_Range'Last, Col - 2 ) := Portal;
+               New_Portal := ( Line1 (Col), Line2 (Col) );
+               if not All_Portals.Contains (New_Portal) then
+                  All_Portals.Insert ( New_Portal );
+               end if;
+               Locations_Of_Portals.Insert
+                  ( ( Row_Range'Last, Col - 2 ), New_Portal );
+            end if;
+         end loop;
+      end;
+
+      for Row in Row_Range loop
+         for Col in Col_Range loop
+            Put ( (
+                  case Maze (Row, Col) is
+                     when Space => '.',
+                     when Empty => ' ',
+                     when Portal => 'P',
+                     when Wall => '#'
+                 ) );
+         end loop;
+         New_Line;
+      end loop;
+
+      declare
+         C : Locations_Of_Portals_Maps.Cursor := Locations_Of_Portals.First;
+         function "=" (First, Second : Locations_Of_Portals_Maps.Cursor)
+                       return Boolean
+                       renames Locations_Of_Portals_Maps."=";
+      begin
+         while C /= Locations_Of_Portals_Maps.No_Element loop
+            Put (Locations_Of_Portals_Maps.Key (C).Row'Image);
+            Put (",");
+            Put (Locations_Of_Portals_Maps.Key (C).Col'Image);
+            Put (" : ");
+            Put (Locations_Of_Portals_Maps.Element (C) (1));
+            Put (Locations_Of_Portals_Maps.Element (C) (2));
+            New_Line;
+            Locations_Of_Portals_Maps.Next(C);
+         end loop;
+      end;
+
+   end Read_Maze;
+
+   procedure Explore (
+                      New_Pos, Old_Pos : Position_Type;
+                      P                : Portal_Name;
+                      Dist             : Natural
+                     )
+   is
+   begin
+      for Dir in Directions loop
+         declare Next_Pos : Position_Type := Adjacent_Position (New_Pos, Dir);
+         begin
+            if Next_Pos /= Old_Pos then
+               if Maze (Next_Pos.Row, Next_Pos.Col) = Space then
+                  Explore ( Next_Pos, New_Pos, P, Dist + 1);
+               elsif Maze (Next_Pos.Row, Next_Pos.Col) = Portal then
+                  Portal_Connections (P).Include
+                        ( Locations_Of_Portals ( Next_Pos ) , Dist + 1 );
+                  Portal_Connections (Locations_Of_Portals (Next_Pos)).Include
+                     ( P, Dist + 1 );
+               end if;
+            end if;
+         end;
+      end loop;
+   end Explore;
+
+   procedure Make_Connections_From (Position : Position_Type; P : Portal_Name)
+   is
+   begin
+      if Position.Row = Row_Range'First or else
+         (
+               Position.Row < Row_Range'Last and then
+               Maze (Position.Row + 1, Position.Col) = Space
+              )
+      then
+         Explore ( ( Position.Row + 1, Position.Col ), Position, P, 1 );
+      elsif Position.Row = Row_Range'Last or else
+         (
+               Position.Row > Row_Range'First and then
+               Maze (Position.Row - 1, Position.Col) = Space
+              )
+      then
+         Explore ( ( Position.Row - 1, Position.Col ), Position, P, 1 );
+      elsif Position.Col = Col_Range'First or else
+         (
+               Position.Col < Col_Range'Last and then
+               Maze (Position.Row, Position.Col + 1) = Space
+              )
+      then
+         Explore ( ( Position.Row, Position.Col + 1 ), Position, P, 1 );
+      else
+         Explore ( ( Position.Row, Position.Col - 1 ), Position, P, 1 );
+      end if;
+   end Make_Connections_From;
+
+   procedure Make_All_Connections is
+      use all type Locations_Of_Portals_Maps.Cursor;
+      C : Locations_Of_Portals_Maps.Cursor := Locations_Of_Portals.First;
+      function Key (C : Locations_Of_Portals_Maps.Cursor) return Position_Type
+                    renames Locations_Of_Portals_Maps.Key;
+      function Element (C : Locations_Of_Portals_Maps.Cursor) return Portal_Name
+                        renames Locations_Of_Portals_Maps.Element;
+   begin
+      Put("all portals: ");
+      for P of All_Portals loop
+         Put(P(1)); Put(P(2)); Put(", ");
+         Portal_Connections.Insert( P, Reachable_Portal_Maps.Empty_Map );
+      end loop;
+      New_Line;
+      while C /= Locations_Of_Portals_Maps.No_Element loop
+         Make_Connections_From (Key (C), Element (C));
+         Next(C);
+      end loop;
+      declare
+         Cur : Portals_Maps.Cursor := Portal_Connections.First;
+         use type Portals_Maps.Cursor;
+      begin
+         while Cur /= Portals_Maps.No_Element loop
+            declare M renames Portals_Maps.Element (Cur);
+            begin
+               Put (Portals_Maps.Key (Cur) (1)); Put (Portals_Maps.Key (Cur) (2));
+               Put (" : ");
+               for P of All_Portals loop
+                  if M.Contains (P) then
+                     Put (P (1)); Put (P (2)); Put (" :");
+                     Put (Natural'Image(M (P)));
+                     Put (" ; ");
+                  end if;
+               end loop;
+            end;
+            New_Line;
+            Portals_Maps.Next (Cur);
+         end loop;
+      end;
+   end Make_All_Connections;
+
+   type Route_Record is record
+      P : Portal_Name;
+      Distance: Natural;
+   end record;
+
+   function Lower_Cost (R : Route_Record) return Natural is ( R.Distance );
+
+   package Search_Route_Interfaces
+   is new Ada.Containers.Synchronized_Queue_Interfaces
+      (
+       Element_Type => Route_Record
+      );
+
+   package Search_Route_Queues
+   is new Ada.Containers.Unbounded_Priority_Queues
+      (
+       Queue_Interfaces => Search_Route_Interfaces,
+       Queue_Priority   => Natural,
+       Get_Priority     => Lower_Cost,
+       Before           => "<"
+      );
+
+   function Find_Route return Natural is
+      Search_Routes : Search_Route_Queues.Queue;
+      Destinations : Reachable_Portal_Maps.Map
+         := Reachable_Portal_Maps.Copy (Portal_Connections (('A', 'A')));
+      package Passed_Portal_Maps is new Ada.Containers.Ordered_Maps
+         (
+          Key_Type => Portal_Name,
+          Element_Type => Boolean
+         );
+      Passed_Portal: Passed_Portal_Maps.Map;
+   begin
+      for P of All_Portals loop
+         Passed_Portal.Insert(P, False);
+      end loop;
+      declare
+         Cur : Reachable_Portal_Maps.Cursor := Destinations.First;
+         use type Reachable_Portal_Maps.Cursor;
+      begin
+         while Cur /= Reachable_Portal_Maps.No_Element loop
+            Search_Routes.Enqueue
+               ( (
+                 Reachable_Portal_Maps.Key (Cur),
+                 Reachable_Portal_Maps.Element (Cur)
+                ) );
+            Reachable_Portal_Maps.Next(Cur);
+         end loop;
+      end;
+      loop
+         declare
+            P : Route_Record;
+         begin
+            Search_Routes.Dequeue(P);
+            if P.P = ( 'Z', 'Z' ) then
+               Put_Line("maximum Queued is " & Search_Routes.Peak_Use'Image);
+               return P.Distance;
+            end if;
+            Passed_Portal(P.P) := True;
+            declare
+               Available_Portals : Reachable_Portal_Maps.Map
+                  := Portal_Connections ( P.P );
+               Distance          : Natural := P.Distance + 1;
+               Cur               : Reachable_Portal_Maps.Cursor
+                  := Available_Portals.First;
+               use type Reachable_Portal_Maps.Cursor;
+            begin
+               while Cur /= Reachable_Portal_Maps.No_Element loop
+                  if not Passed_Portal(Reachable_Portal_Maps.Key(Cur)) then
+                     Search_Routes.Enqueue
+                        ( (
+                          Reachable_Portal_Maps.Key (Cur),
+                          Reachable_Portal_Maps.Element (Cur) + Distance
+                         ) );
+                  end if;
+                  Reachable_Portal_Maps.Next (Cur);
+               end loop;
+            end;
+         end;
+      end loop;
+   end Find_Route;
+
+begin
+
+   Open (F, In_File, Filename);
+   Read_Maze;
+   Close (F);
+
+   Make_All_Connections;
+   Put_Line("shortest route is" & Find_Route'Image);
+
+end Main;

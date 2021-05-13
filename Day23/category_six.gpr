@@ -1,0 +1,14 @@
+with "../Intcode/intcode.gpr";
+
+project Category_Six is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Main use ("main.adb");
+
+   package Compiler is
+      for Switches ("ada") use ("-g");
+   end Compiler;
+
+end Category_Six;
+

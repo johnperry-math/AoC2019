@@ -1,0 +1,54 @@
+0 inp_a 62
+2 add_aia 62 11 10
+6 adj_i 2229
+8 jtr_ia 1 0            ; 0 -> 62 + machine #
+--
+73 inp_a 64
+75 teq_aia 64 -1 62
+79 jfa_ai 62 88
+82 jfa_ai 61 170
+85 jfa_ii 0 73
+88 inp_a 65
+90 add_iar 0 64 1
+94 add_iar 1 66 2
+98 add_iir 105 1 0
+102 jfa_ii 0 436
+--
+170 add_iia 0 1 61
+174 mul_iia 1 0 63
+178 lt_aaa 63 67 62
+182 jfa_ai 62 203
+185 mul_aia 63 2 194
+189 add_aaa 68 194 194
+193 jfa_aia 0 73
+196 add_aia 63 1 63
+200 jtr_ii 1 178
+203 add_iir 210 0 0
+207 jfa_ia 0 69
+--
+210 mul_ria 1 1 70
+214 add_iia 0 0 63
+218 lt_aaa 63 71 62
+222 jfa_ai 62 250
+225 mul_aia 63 2 234
+229 mul_aaa 72 234 234
+233 out_a 0
+235 add_iaa 1 234 240
+239 out_a 0
+241 out_a 70
+243 add_aia 63 1 63
+247 jfa_ii 0 218
+--
+556 adj_i 1
+558 add_iaa 1 68 564
+562 mul_iar 1 0 0
+566 adj_i -1
+568 jtr_ir 1 0
+--
+703 mul_iia 31063 1 66
+707 mul_iia 1 1 67
+711 mul_iia 1 730 68
+715 add_iia 0 556 69
+719 mul_iia 6 1 71
+723 mul_iia 732 1 72
+727 jfa_ii 0 73

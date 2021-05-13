@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day21/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 61" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 16" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day21/springdroid_adventure.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 16" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 61" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 51" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 169" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 97" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 97" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 97" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 151" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 181" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 181" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 151" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 113" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 182" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 113" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 192" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 134" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 114" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 167" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 175" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 202" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 201" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 158" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 151" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 139" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 151" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 65" line=" 192" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 199" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 195" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 160" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 163" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 175" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 167" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 134" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 139" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 139" >
+      <vfs_project>/home/cantanima/common/Ada/AoC2019/Day23/category_six.gpr</vfs_project>
+      <vfs_file>/home/cantanima/common/Ada/AoC2019/Day23/src/main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

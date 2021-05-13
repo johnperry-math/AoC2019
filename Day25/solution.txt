@@ -1,0 +1,27 @@
+east-
+east-
+take fuel cell-
+west-
+south-
+take shell-
+north-
+west-
+south-
+west-
+north-
+east-
+take space heater-
+west-
+south-
+west-
+west-
+south-
+west-
+north-
+take coin-
+south-
+east-
+north-
+west-
+north-
+north-

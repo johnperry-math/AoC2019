@@ -1,0 +1,806 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 55" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 33" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 62" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 39" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 101" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 71" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 71" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 62" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 53" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 73" line=" 52" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 53" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/intcode.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 4" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/intcode.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 5" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day4/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 13" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 27" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 42" line=" 109" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 63" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/program_alarm_1202.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 63" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/program_alarm_1202.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 63" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 11" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 35" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 54" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 61" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main_alternate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 123" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main_alternate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 7" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day2/src/main_alternate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 55" line=" 27" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 19" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 67" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 69" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 19" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 67" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 110" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 110" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 110" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 19" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2020/Day23/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 20" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 11" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 13" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/sunny_with_a_chance_of_asteroids.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 10" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 69" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 34" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 14" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 67" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 67" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 35" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 35" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 67" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 57" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 57" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 67" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 57" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 122" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 137" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 136" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 122" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 58" line=" 132" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 122" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 34" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 122" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 58" line=" 132" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 122" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 136" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 81" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 146" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 146" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 146" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 146" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 146" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 58" line=" 149" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 146" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 148" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 61" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 23" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 131" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 159" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 158" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 53" line=" 161" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 159" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 150" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 150" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 74" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 65" line=" 92" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 85" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 94" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 85" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 95" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 85" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 94" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 85" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 105" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 87" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 105" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day6/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 4" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/intcode.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 5" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 39" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 39" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 39" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 39" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 58" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 39" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 19" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 65" line=" 44" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 45" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 49" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 56" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 34" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Day5/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 86" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 99" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 99" >
+      <vfs_project />
+      <vfs_file>/Users/user/common/Ada/AoC2019/Intcode/src/intcode.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
